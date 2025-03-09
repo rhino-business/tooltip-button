@@ -1,0 +1,69 @@
+	   .container {
+	       display: grid;
+	       border: 0.02rem solid transparent;
+	       place-content: center;
+	       margin-left: 0.3rem;
+	       margin-right: 0.3rem;
+	       margin-top: 10rem;
+	       min-height: 10rem;
+	       background: #F8F8F8;
+	    }
+	    #tooltip_button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; 
+          font-size: 1.55rem;
+          width: 14rem;
+          height: 3.5rem;
+          background: #0900B0;  
+          color: #FFFFFE;
+          text-align: center;
+          border: 0.1rem solid #0900B0;   
+          outline: 0.16rem solid transparent;
+          border-radius: 0.2rem;
+          cursor: pointer;
+          font-family: "Cuprum"; 
+          box-shadow: 0.6rem 1rem 1rem #9B97B2, inset 0.1rem 0.1rem 1rem rgba(255, 255, 255, 0.5);
+          margin-top: 2rem;  
+	      margin-bottom: 2rem;
+        }
+        #tooltip_button:focus {
+            background: #9B97B2;          
+        } 
+        [data-tooltip] {
+             position: relative;
+        }
+	    [tooltip]:hover::after {  
+             display: grid;
+             content: attr(tooltip);
+             border: 0.1rem solid #9B97B2;
+             border-radius: 0.5rem;
+             background: #F1E9BA;
+             padding: 0.5rem;
+             z-index: 10;
+             opacity: 1;
+             position: absolute;
+             color: #3C2D6B;
+             font-size: 1.1rem;
+             font-family: "Cuprum";
+             margin-top: 1.2rem;
+        }
+        @font-face {
+            font-family: "Cuprum"; 
+            src: url("../fonts/dg45_pLmvrkcOkBnKsOzXyGWTBcmg-X6VjvYJw.woff2") format("woff2"); 
+            font-style: normal; 
+            font-weight: normal; 
+            font-display: block;
+        }
+        @media(min-width: 1700px) {
+            .container {
+                width: 1400px;
+                place-self: center;
+            }
+        } 
+        @media(max-width: 279px) {
+            .container {
+                display: none;
+            }
+        }
+        
