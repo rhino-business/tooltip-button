@@ -1,14 +1,14 @@
-	   .container {
-	       display: grid;
-	       border: 0.02rem solid transparent;
-	       place-content: center;
-	       margin-left: 0.3rem;
-	       margin-right: 0.3rem;
-	       margin-top: 10rem;
-	       min-height: 10rem;
-	       background: #F8F8F8;
-	    }
-	    #tooltip_button {
+       .container {
+	  display: grid;
+	  border: 0.02rem solid transparent;
+	  place-content: center;
+	  margin-left: 0.3rem;
+	  margin-right: 0.3rem;
+	  margin-top: 10rem;
+	  min-height: 10rem;
+	  background: #F8F8F8;
+        }
+	#tooltip_button {
           -webkit-appearance: none;
           -moz-appearance: none;
           appearance: none; 
@@ -25,7 +25,7 @@
           font-family: "Cuprum"; 
           box-shadow: 0.6rem 1rem 1rem #9B97B2, inset 0.1rem 0.1rem 1rem rgba(255, 255, 255, 0.5);
           margin-top: 2rem;  
-	      margin-bottom: 2rem;
+	  margin-bottom: 2rem;
         }
         #tooltip_button:focus {
             background: #9B97B2;          
@@ -33,7 +33,7 @@
         [data-tooltip] {
              position: relative;
         }
-	    [tooltip]:hover::after {  
+	[tooltip]:hover::after {  
              display: grid;
              content: attr(tooltip);
              border: 0.1rem solid #9B97B2;
